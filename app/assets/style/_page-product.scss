@@ -1,0 +1,235 @@
+/*page-optical-product頁面開始*/
+.optical-product-page-list h2{
+    text-align: center;
+    font-size: 42px;
+}
+.optical-product-page-title{
+    text-align: center;
+    h2{
+        font-weight: bold;
+        font-size: 42px;
+    }
+    h3{
+        font-size: 32px;
+        font-weight: lighter;
+        margin-bottom: 48px;
+    }
+}
+.optical-photo-list {
+    justify-content: space-between;
+    margin-bottom: 88px;
+    li{
+        width: 49%;
+        height: 309px;
+        background-position: center center;
+        background-size: cover;
+
+    }
+}
+.optical-photo-list li:first-child{
+    background-image: url(../images/banner-1.png);
+}
+.optical-photo-list li:last-child{
+    background-image: url(../images/banner-2.png);
+}
+.optical-product-page-list{
+    display: flex;
+    width: 33.333%;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 16px solid #fff;
+    border: 1px solid #DCDCDC;
+    position: relative;
+        a{
+        text-decoration: none;
+        color:$text-default-color;
+    }
+
+    img{
+        margin-right: 8px;
+    }
+    h2{
+        font-size: 42px;
+    }
+    
+}
+
+
+.optical-product-page-list:hover::after{
+    content: "";
+    width: 100%;
+    height: 16px;
+    background-color: $primary-color;
+    position: absolute;
+    bottom: 0;
+}
+.optical-product-page-list:hover::after{
+    content: "";
+    width: 100%;
+    height: 16px;
+    background-color: $primary-color;
+    position: absolute;
+    bottom: 0;
+}
+.optical-product-list li{
+    width: 23%;
+    justify-content: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 104px;
+}
+
+.optical-product-price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    span{
+       text-transform: uppercase;
+   }
+}
+.product-price-mark{
+    color: $primary-color;
+    font-weight: bold;
+}
+.optical-product-color{
+    display: flex;
+    span{
+        border-radius: 4px;
+    }
+}
+.optical-product-color span:nth-child(1){
+    width: 24px;
+    height: 24px;
+    background-color: #5F3E2D;
+    margin-right: 8px;
+}
+.optical-product-color span:nth-child(2){
+    width: 24px;
+    height: 24px;
+    background-color: #B75929;
+    margin-right: 0px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 156px;
+    .page-item{
+        display: flex;
+        justify-content: center;
+        border: 1px solid #000;
+        // padding: 10px 15px 12px 9px ;
+        padding: 10px;
+        .page-link{
+            text-decoration: none;
+            color: #000;
+            text-align: center;
+        }
+    }
+}
+.page-item:nth-child(2){
+    background-color: #000;
+    .page-link{
+    color: #fff;
+   }
+}
+@include pad{
+    .optical-photo-list li:first-child{
+        background-image: url(../images/banner-1-pad.png);
+    }
+    .optical-photo-list li:last-child{
+        background-image: url(../images/banner-2-pad.png);
+    }
+    .optical-product-page-list{
+        padding: 16px 0px;
+    }
+    .optical-product-page-list:hover::after{
+        height: 8px;
+    }
+    .optical-product-page-list h2{
+        font-size: 28px;
+    }
+    .optical-product-page-list:hover::after{
+    height: 8px;
+
+}
+    .optical-product-page-list{
+        img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+    .optical-product-page-title{
+
+        h2{
+            font-size: 32px;
+        }
+        h3{
+            font-size: 24px;
+            margin-bottom: 32px;
+
+        }
+    }
+    .optical-product-list li{
+        width: 48%;
+    }
+
+    .optical-product-price span{
+        font-size: 24px;
+    }
+}
+@include phone{
+    .optical-photo-list li:first-child{
+        height: 144px;
+    }
+    .optical-photo-list li:last-child{
+        height: 144px;
+    }
+    .optical-product-page-list{
+        padding: 8px 0px;
+    }
+    .optical-product-page-list:hover::after{
+        height: 4px;
+    
+    }
+    .optical-product-page-list h2{
+        font-size: 12px;
+    }
+    .optical-product-page-list{
+        img{
+            width: 14px;
+            height: 15px;
+        }
+    }
+    .optical-product-page-title{
+
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 16px;
+            margin-bottom: 20px;
+
+        }
+    }
+    .optical-product-color span:nth-child(1){
+        width: 15px;
+        height: 16px;
+        background-color: #5F3E2D;
+        margin-right: 8px;
+    }
+    .optical-product-color span:nth-child(2){
+        width: 17px;
+        height: 16px;
+        background-color: #B75929;
+        margin-right: 0px;
+    }
+    .optical-product-price span{
+        font-size: 16px;
+    }
+    .optical-product-list li{
+            width: 100%;
+
+    }
+}
+/*page-optical-product頁面結束*/

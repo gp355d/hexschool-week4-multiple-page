@@ -1,0 +1,149 @@
+/*page-product-sunglass頁面開始*/
+.sunglass-product-page-title{
+    text-align: center;
+    h2{
+        font-weight: bold;
+        font-size: 42px;
+    }
+    h3{
+        font-size: 32px;
+        font-weight: lighter;
+        margin-bottom: 48px;
+    }
+}
+.sunglass-photo-list {
+    justify-content: space-between;
+    margin-bottom: 88px;
+    li{
+        width: 49%;
+        height: 309px;
+        background-position: center center;
+        background-size: cover;
+
+    }
+}
+.sunglass-photo-list li:first-child{
+    background-image: url(../images/banner-3.png);
+}
+.sunglass-photo-list li:last-child{
+    background-image: url(../images/product-2-color.png);
+}
+.sunglass-product-list li{
+    width: 31.333%;
+    justify-content: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 104px;
+}
+
+.sunglass-product-price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    span{
+       text-transform: uppercase;
+   }
+}
+
+.sunglass-product-price-mark{
+    color: $primary-color;
+    font-weight: bold;
+}
+.sunglass-product-color{
+    display: flex;
+    span{
+        border-radius: 4px;
+    }
+}
+.sunglass-product-color span:nth-child(1){
+    width: 19px;
+    height: 19px;
+    background-color: #5F3E2D;
+    margin-bottom: 4px;
+    margin-right: 8px;
+}
+.sunglass-product-color span:nth-child(2){
+    width: 18px;
+    height: 19px;
+    background-color: #B75929;
+    margin-right: 0px;
+}
+
+@include pad{
+.sunglass-photo-list li:first-child{
+    background-image: url(../images/banner-3-pad.png);
+}
+.sunglass-photo-list li:last-child{
+    background-image: url(../images/product-2-color-pad.png);
+}
+
+.sunglass-product-page-title{
+
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 24px;
+        margin-bottom: 32px;
+
+    }
+}
+.sunglass-product-list li{
+    width: 48%;
+}
+
+.sunglass-product-price span{
+    font-size: 24px;
+}
+}
+@include phone{
+    .sunglass-photo-list li:first-child{
+        height: 144px;
+    }
+    .sunglass-photo-list li:last-child{
+        height: 144px;
+    }
+    .sunglass-product-page-list{
+        padding: 8px 0px;
+    }
+    .sunglass-product-page-list h2{
+        font-size: 12px;
+    }
+    .sunglass-product-page-list{
+        img{
+            width: 14px;
+            height: 15px;
+        }
+    }
+    .sunglass-product-page-title{
+
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 16px;
+            margin-bottom: 20px;
+
+        }
+    }
+    .sunglass-product-color span:nth-child(1){
+        width: 15px;
+        height: 16px;
+        background-color: #5F3E2D;
+        margin-right: 8px;
+    }
+    .sunglass-product-color span:nth-child(2){
+        width: 17px;
+        height: 16px;
+        background-color: #B75929;
+        margin-right: 0px;
+    }
+    .sunglass-product-price span{
+        font-size: 16px;
+    }
+    .sunglass-product-list li{
+            width: 100%;
+
+    }
+}
+/*page-product-sunglass頁面結束*/
