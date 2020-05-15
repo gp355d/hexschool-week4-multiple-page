@@ -1,10 +1,34 @@
----
-title: page2 
-layout: ./app/layout4.ejs 
-engine: ejs
-current: index 
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        page2
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+    <div class="header d-flex justify-content-between align-items-center">
+        <h1 class="d-flex align-items-center">
+            <a href="index.html"></a>
+        </h1>
+        <a class="hamber-menu" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <ul class="menu d-flex justify-content-between">
+            <li><a href="page-product.html">系列鏡框</a></li>
+            <li><a href="page-location.html">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="page-faq.html">常見問題</a></li>
+        </ul>
+    </div>
+    
+    
 <div class="blog-news d-flex justify-content-between align-items-center">
   <ul class="news d-flex justify-content-between active">
     <li><a href="#">最新消息</a></li>
@@ -102,3 +126,103 @@ current: index
 </div>
       
 
+
+    <ul class="pagination d-flex">
+        <li class="page-item">          
+          <a class="page-link" href="#">上一頁</a>
+    
+        </li>
+        <li class="page-item">        
+          <a class="page-link" href="#">1</a>
+    
+        </li>
+        <li class="page-item">        
+          <a class="page-link" href="#">2</a>
+    
+        </li>
+        <li class="page-item">        
+          <a class="page-link" href="#">3</a>
+    
+        </li>
+        <li class="page-item">        
+          <a class="page-link" href="#">4</a>
+    
+        </li>
+        <li class="page-item">        
+          <a class="page-link" href="#">5</a>
+    
+        </li>
+        <li class="page-item">          
+          <a class="page-link" href="#">下一頁</a>
+    
+        </li>
+    </ul>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-outer">
+                    <div class="link-outer mb-24">
+
+                        <div class="link d-flex justify-content-between align-items-center">
+                            <div class="website-link-outer">
+                                <ul class="website-link d-flex justify-content-between">
+                                    <li><a href="#">首頁</a></li>
+                                    <li><a href="#">系列鏡框</a></li>
+                                    <li><a href="#">門市據點</a></li>
+                                    <li><a href="#">部落格</a></li>
+                                    <li><a href="#">常見問題</a></li>
+                                </ul>
+                                <ul class="countas-way-list">
+                                    <li>
+                                        <img src="./assets/images/icon-phone.svg" alt="">
+                                        <p>0800-000-000</p>
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/icon-mail.svg" alt="">
+                                        <p>glasses@business.com</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <ul class="social-link d-flex justify-content-between">
+                                <li>
+                                    <a href=""><img src="./assets/images/icon-fb.svg" alt=""></a>
+
+                                </li>
+                                <li>
+                                    <a href=""><img src="./assets/images/icon-ig.svg" alt=""></a>
+
+                                </li>
+                                <li>
+                                    <a href=""><img src="./assets/images/icon-line.svg" alt=""></a>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <hr class="mb-24">
+                    <div class="countas-way">
+
+                        <div class="copyright d-flex align-items-center flex-wrap">
+                            <!-- <div class="copyright-outer d-flex justify-content-between align-items-center"> -->
+                            <a class="logo" href="">
+                                <img src="./assets/images/logo.png" alt="">
+                            </a>
+                            <p>Copyright © 2020 Glasses.All rights reserved.</p>
+                            <!-- </div> -->
+                            <ul class="d-flex justify-content-between ">
+                                <li><a href="#">隱私權政策</a></li>
+                                <li><a href="#">服務條款</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
